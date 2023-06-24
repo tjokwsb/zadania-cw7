@@ -1,0 +1,20 @@
+using System;
+
+public class Program
+{
+    public static string FormatujCzas(int sekundy)
+    {
+        int godziny = sekundy / 3600;
+        int minuty = (sekundy % 3600) / 60;
+        int pozostaleSekundy = sekundy % 60;
+
+        return $"{godziny:00}:{minuty:00}:{pozostaleSekundy:00}";
+    }
+
+    public static void Main(string[] args)
+    {
+        Console.WriteLine(FormatujCzas(332));
+        Console.WriteLine(FormatujCzas(3661));
+        Console.WriteLine(FormatujCzas(7200));
+    }
+}
