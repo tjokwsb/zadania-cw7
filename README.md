@@ -1,1 +1,1 @@
-# zadania-cw7
+zadania do ćwiczeń nr 7
